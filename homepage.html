@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    
+    #navbar{
+        width: 100%;
+    border: 0px solid red;
+display: flex;
+justify-content: space-between;
+margin-top: 30px;
+position: relative;
+    }
+    
+    #navbar>div:nth-child(1)>img{
+      width: 55%;
+      margin-top: -20px;
+      margin-left: 10px;
+      
+    }
+    #products>.product-hover{
+        display: none;
+        position: absolute;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border: 1px solid #00b0f8;
+        width: 12%;
+        gap: 20px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 7px;
+    }
+   
+     #products:hover{
+        color:#00b0f8 ;
+    } 
+    #products:hover .product-hover{
+        display: grid;
+        color: #000000;
+       
+    }
+    #neuro>.neuro-hover{
+        display: none;
+        position: absolute;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border: 1px solid #00b0f8;
+        width: 12%;
+        gap: 20px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 7px;
+    }
+  
+    #neuro:hover{
+        color: #00b0f8;
+       
+    }
+    #neuro:hover .neuro-hover{
+        display: grid;
+        color: #000000;
+       
+    }
+    #res>.res-hover{
+        display: none;
+        position: absolute;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border: 1px solid #00b0f8;
+        width: 12%;
+        gap: 20px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 7px;
+    }
+
+    #res:hover{
+        color: #00b0f8;
+    }
+    #res:hover .res-hover{
+        display: grid;
+        color: #000000;
+       
+    }
+    #lang>.lang-hover{
+        display: none;
+        position: absolute;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border: 1px solid #00b0f8;
+        width: 4%;
+        gap: 20px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 7px;
+        margin-top: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    
+    }
+
+    #lang:hover{
+        color: #00b0f8;
+    }
+    #lang:hover .lang-hover{
+        display: grid;
+        color: #000000;
+       
+    }
+    .lang-hover>div{
+        display: flex;
+    }
+    .lang-hover>div>img{
+        width: 50%;
+        padding-right: 10px;
+        padding-left: -5px;
+    }
+    
+    #navbar>div:nth-child(2){
+        border: 0px solid teal;
+        display: flex;
+        width: 45%;
+        justify-content: space-between;
+        color: #808080;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+    #navbar>div:nth-child(2)>div:nth-child(6){
+        display: flex;
+        color: black;
+        font-weight: bold;
+        margin-top: -15px;
+        gap: 5px;
+    }
+    #navbar>div:nth-child(2)>div:nth-child(7){
+        border: 1px solid #e3eef2;
+        padding: 10px;
+        border-radius: 20px;
+        width: 10%;
+        margin-top: -10px;
+        text-align: center;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+    #top-div{
+        text-align: center;
+        margin-top: -30px;
+    }
+    #top-div>h1{
+        font-weight: 800;
+        font-size: 57px;
+        line-height: 70px;
+        color: #000000;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #top-div>p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 30px;
+    width: 48%;
+    margin: auto;
+    margin-top: -10px;
+    }
+    #signup{
+        width: 35%;
+        border: 10px solid #e4f3ff;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    #signup>button{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 31px;
+        background-color: #00b0f8;
+        color: white;
+        border: 0px;
+        padding: 15px;
+        width: 35%;
+        border-radius: 10px;
+    }
+    #signup>input{
+        border: 0px;
+        margin-left: 20px;
+    }
+    ::placeholder{
+        color: #6a6765;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 22px;
+       
+    }
+    #top-div>img{
+        margin-top: 30px;
+    }
+    #top-div-cards{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    }
+    #top-div-cards>div{
+        width: 22%;
+       text-align: center;
+       font-size: 16px;
+       font-weight: 300;
+       color: #6f6e6b;
+       line-height: 22px;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #mid-1{
+        width: 72%;
+        border: 0px solid teal;
+        height: 600px;
+        background-color: #def4fc;
+        margin-left: 30px;
+        border-radius: 30px;
+        margin-top: 120px;
+        position:relative;
+        
+    }
+    #mid-1>div:nth-child(1){
+      
+        font-weight: 800;
+        font-size: 50px;
+        width: 50%;
+        line-height: 60px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding-top: 50px;
+        margin-left: 50px;
+    }
+    #mid-1>div:nth-child(2){
+       
+        font-weight: 300;
+        font-size: 19px;
+        width: 60%;
+        line-height: 26px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: 60px;
+        margin-left: 50px;
+    }
+    .teal{
+        color:#198099;
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 26px;
+    }
+    #mid-1>div:nth-child(3){
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,auto);
+        width: 40%;
+        margin-left: 50px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: 35px;
+    }
+    #mid-1>div:nth-child(3)>div{
+        display: flex;
+        
+    }
+    #mid-1>div:nth-child(3)>div>p{
+        margin-top: 0px;
+        margin-left: 5px;
+    }
+    #mid-1>div:nth-child(4){
+        width: 35%;
+        margin-left: 50px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: 15px;
+    }
+    .black{
+       
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #5c5c5c;
+    }
+    #mid-1>button{
+        width: 20%;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        background-color: #1a9ef6;
+        text-align: center;
+        margin-left: 50px;
+        border-radius: 5px;
+        border: 0px;
+        margin-top: 20px;
+        padding: 10px;
+    }
+    #exp{
+        display: flex;
+        
+    }
+   #overlay{
+    margin-top: 230px;
+    margin-left: 900px;
+    width: 30%;
+    z-index: 100;
+    height: 200px;
+    position: absolute;
+   
+   }
+   #overlay>video{
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   }
+   #mid-2>div:nth-child(1){
+    border: 1px solid red;
+    width: 55%;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto;
+    text-align: center;
+    margin-top: 120px;
+   }
+   #mid-2>div:nth-child(2){
+     width: 95%;
+   
+     margin: auto;
+     height: 400px;
+     margin-top: 70px;
+     display: flex;
+     justify-content: space-around;
+   }
+   #mid-2>div:nth-child(2)>div{
+    width: 32%;
+    border: 1px salmon solid;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 20px;
+    height: 400px;
+   }
+   #mid-2>div:nth-child(2)>div>div:nth-child(1){
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+    color: #6a2fcc;
+    margin-left: 25px;
+    margin-top: 25px;
+   }
+   #mid-2>div:nth-child(2)>div>div:nth-child(2){
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 31px;
+    margin-left: 25px;
+    width: 80%;
+    margin-top: 25px;
+   }
+   #mid-2>div:nth-child(2)>div>div:nth-child(3){
+    margin-top: 30px;
+   }
+   #mid-2>div:nth-child(2)>div>div:nth-child(3)>div{
+    display: flex;
+    margin-left: 25px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+   }
+   #mid-2>div:nth-child(2)>div>div:nth-child(3)>div>p{
+    margin-top: 2px;
+    margin-left: 5px;
+   }
+   
+   </style>
+</head>
+<body>
+    <!-- creating navbar -->
+    <div id="navbar">
+  <div>
+     <img src="https://www.ayoa.com/wp-content/themes/droptaskreload/navigation/images/ayoa_bluenavlogo.svg">
+  </div>
+  <div>
+    <div>Home</div>
+    <div id="products">Products
+        <div class="product-hover">
+            <div>
+             Ayoa Mind Map
+            </div>
+            <div>
+            Ayoa Task
+            </div>
+            <div>
+            Ayoa Ultimate
+            </div>
+         </div>
+    </div>
+    <div id="neuro">Neurodiversity
+        <div class="neuro-hover">
+            <div>
+             DSA
+            </div>
+            <div>
+            Software
+            </div>
+            <div>
+            Workplace
+            </div>
+            <div>
+            Education
+            </div>
+         </div>
+    </div>
+    <div id="res">Resourses
+        <div class="res-hover">
+            <div>
+             Ayoa Blog
+            </div>
+            <div>
+            Press & Articles
+            </div>
+            <div>
+            Keynote Speaker
+            </div>
+            <div>
+            Our Partners
+            </div>
+            <div>
+            Help Center
+            </div>
+         </div>
+    </div>
+    <div>Pricing</div>
+    <div id="lang">
+        <img src="https://flagicons.lipis.dev/flags/4x3/gb.svg">
+        <p>EN</p>
+        <div class="lang-hover">
+            <div>
+             <img src="https://flagicons.lipis.dev/flags/4x3/fr.svg">
+             FR
+            </div>
+            <div>
+                <img src="https://flagicons.lipis.dev/flags/4x3/cx.svg">
+            CN
+            </div>
+            <div>
+                <img src="https://flagicons.lipis.dev/flags/4x3/hr.svg">
+            JP
+            </div>
+            <div>
+                <img src="https://flagicons.lipis.dev/flags/4x3/ck.svg">
+            KR
+            </div>
+            
+         </div>
+        </div>
+    <div>Log In</div>
+    </div>
+  </div>
+  
+  
+  <div id="top-div">
+  <h1>Be different, work visually</h1>
+  <p>Try the world’s most visual productivity app. Supercharge thinking, planning and learning with AI, mind maps, task boards, and more</p>
+  <div id="signup">
+    <input placeholder="Enter your email">
+    <button>Get Started</button>
+  </div>
+ 
+  <img src="https://www.ayoa.com/wp-content/uploads/2022/07/ayoa_allinone_watch.webp">
+  </div>
+  <!-- top div card -->
+  <div id="top-div-cards">
+    <div>
+        <img src="https://www.ayoa.com/wp-content/uploads/2018/05/cbsnews_logo.png">
+        <p>“The most unique twist on task management I’ve ever seen”</p>
+    </div>
+    <div>
+        <img src="https://www.ayoa.com/wp-content/uploads/2018/05/techcrunch-logo.png">
+        <p>“Visually-oriented people – this layout boosts productivity”</p>
+    </div>
+    <div>
+        <img src="https://www.ayoa.com/wp-content/uploads/2019/09/logo-lhacker.png">
+        <p>“Turns your tasks into an awesome venn diagram”</p>
+    </div>
+    <div>
+        <img src="https://www.ayoa.com/wp-content/uploads/2019/09/logo-pcworld.png">
+        <p>“A more intuitive way to manage workloads”</p>
+    </div>
+  </div>
+
+  <!-- Mid part-1 -->
+  <div id="exp">
+     <div id="mid-1">
+      <div>
+        The world’s only
+       mind maps with AI
+      </div>
+      <div>
+        Use one of the largest deep learning networks ever created to generate unique and innovative ideas for <span class="teal">anything you can think of.</span>
+      </div>
+      <div>
+       <div>
+        <span>&#10003;</span>
+        <p>Ask the right questions</p>
+       </div>
+       <div>
+        <span>&#10003;</span>
+        <p>Unlock problems</p>
+       </div>
+       <div>
+        <span>&#10003;</span>
+        <p>Breeze past blocks</p>
+      </div>
+       <div>
+        <span>&#10003;</span>
+        <p>Mind map in full flow</p>
+      </div>
+       <div>
+        <span>&#10003;</span>
+        <p>Explore new angles</p>
+       </div>
+
+        </div>
+        <div>
+        Take your mind maps to the next level using AI.
+         *Available in <span class="black" >Ayoa Ultimate only.</span>
+       </div>
+        <button>Find out more</button>
+       </div>
+       <div id="overlay">
+       <video  autoplay loop>
+        <source src="https://www.ayoa.com/wp-content/uploads/2021/11/generateideas.mp4" type="video/mp4" />
+        Your browser does not support the video element.
+       </video>
+       </div>
+    </div>
+
+    <!-- Mid part-2 -->
+    <div id="mid-2">
+        <!-- heading -->
+      <div>
+        Choose creativity or productivity, or why not have it all?
+      </div>
+      <!-- 3 cards -->
+       <div>
+          <div>
+            <div>Ayoa Mind Map</div>
+            <div>Great for those looking to brainstorm ideas and get creative</div>
+            <div>
+            <div>
+                <span>&#10003;</span>
+                <p>Organic mind maps</p>
+            </div>
+            <div>
+                <span>&#10003;</span>
+                <p>Speed mind maps</p>
+            </div>
+            <div>
+                <span>&#10003;</span>
+                <p>Radial maps</p>
+            </div>
+            <div>
+                <span>&#10003;</span>
+                <p>Capture maps</p>
+            </div>
+         </div>
+        
+           </div>
+           <div>
+        
+           </div>
+           <div></div>
+       </div>
+    </div>
+</body>
+ <script src="homepage.js"></script>
+ </html>
+
+
+
