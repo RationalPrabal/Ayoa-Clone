@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ayoa - The mind map used by millions.</title>
    <style>
     
     #navbar{
@@ -14,6 +14,9 @@ display: flex;
 justify-content: space-between;
 margin-top: 30px;
 position: relative;
+    }
+    #navbar>div:hover{
+        cursor: pointer;
     }
     
     #navbar>div:nth-child(1)>img{
@@ -135,13 +138,19 @@ position: relative;
         gap: 5px;
     }
     #navbar>div:nth-child(2)>div:nth-child(7){
-        border: 1px solid #e3eef2;
-        padding: 10px;
-        border-radius: 20px;
-        width: 10%;
+      border: 1px solid #dee1e4;
+        padding: 0px;
+        border-radius: 25px;
+        width: 14%;
         margin-top: -10px;
         text-align: center;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+    #navbar>div:nth-child(2)>div:nth-child(7):hover{
+        border: 1px solid #00b0f8;
     }
     #top-div{
         text-align: center;
@@ -173,6 +182,17 @@ position: relative;
         padding: 5px;
         border-radius: 10px;
     }
+    #signup1{
+        width: 35%;
+        border: 10px solid #e4f3ff;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    
     #signup>button{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 22px;
@@ -181,11 +201,28 @@ position: relative;
         background-color: #00b0f8;
         color: white;
         border: 0px;
-        padding: 15px;
+        padding: 10px;
+        width: 35%;
+        border-radius: 10px;
+    }
+    #signup1>button{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 31px;
+        background-color: #00b0f8;
+        color: white;
+        border: 0px;
+        padding: 10px;
         width: 35%;
         border-radius: 10px;
     }
     #signup>input{
+        border: 0px;
+        margin-left: 20px;
+        outline: 0px;
+    }
+    #signup1>input{
         border: 0px;
         margin-left: 20px;
     }
@@ -193,6 +230,13 @@ position: relative;
         color: #6a6765;
         font-size: 16px;
         font-weight: 300;
+        line-height: 22px;
+       
+    }
+    #signup1::placeholder{
+        color: #6a6765;
+        font-size: 16px;
+        
         line-height: 22px;
        
     }
@@ -308,9 +352,9 @@ position: relative;
     }
    #overlay{
     margin-top: 230px;
-    margin-left: 900px;
+    margin-left: 860px;
     width: 30%;
-    z-index: 100;
+    z-index: 1000;
     height: 200px;
     position: absolute;
    
@@ -320,7 +364,7 @@ position: relative;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
    }
    #mid-2>div:nth-child(1){
-    border: 1px solid red;
+   
     width: 55%;
     font-weight: 800;
     font-size: 50px;
@@ -335,13 +379,13 @@ position: relative;
    
      margin: auto;
      height: 400px;
-     margin-top: 70px;
+     margin-top: 100px;
      display: flex;
      justify-content: space-around;
    }
    #mid-2>div:nth-child(2)>div{
     width: 32%;
-    border: 1px salmon solid;
+    
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     border-radius: 20px;
     height: 400px;
@@ -354,6 +398,9 @@ position: relative;
     color: #6a2fcc;
     margin-left: 25px;
     margin-top: 25px;
+   }
+   #mid-2>div:nth-child(2)>div:nth-child(2)>div:nth-child(1){
+color: #73c43b;
    }
    #mid-2>div:nth-child(2)>div>div:nth-child(2){
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -380,7 +427,381 @@ position: relative;
     margin-top: 2px;
     margin-left: 5px;
    }
+   #mid-2>div:nth-child(2)>div:nth-child(3){
+    width: 32%;
+    
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 20px;
+    height: 500px;
+    margin-top: -50px;
+    display: grid;
+   }
+   #mid-2>div:nth-child(2)>div:nth-child(3)>div:nth-child(1){
+   background-color: #00283f;
+   border-radius: 10px 10px 0px 0;
+   margin-top: 0px;
+   margin-left: 0px;
+
+   }
+   #mid-2>div:nth-child(2)>div:nth-child(3)>div:nth-child(1)>p{
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 42px;
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+   }
+   #mid-2>div:nth-child(2)>div:nth-child(3)>div:nth-child(1)>p+p{
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 31px;
+  color:white;
+  text-align: center;
+ 
+  width: 80%;
+  margin: auto;
+   }
+   #mid-2>div:nth-child(2)>div:nth-child(3)>div:nth-child(1)>p+p>span{
+    font-weight: 700;
+   }
+   #mid-2>div:nth-child(2)>div:nth-child(3)>div:nth-child(1)>img{
+    width: 27%;
+  margin-left: 90px;
+ margin-right: 0px;
+   }
+   #mid-2>div:nth-child(2)>div:nth-child(3)>div:nth-child(2){
+  display: grid;
+  
+
+   }
+   #mid-2>div:nth-child(2)>div:nth-child(3)>div:nth-child(2)>div{
+    
+    height: 5%;
+    line-height: 0px;
+    text-align: center;
+    display: flex;
+    margin-left: 70px;
+    
+   }
+   #mid-2>div:nth-child(2)>div:nth-child(3)>div:nth-child(2)>div>p{
+    margin-top: 0px;
+
+   }
+   #mid-2+div>button{
+    background-color: #1a9ef6;
+    color: white; 
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    border: 0px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+   }
+   #mid-2+div{
+    margin: auto;
+    margin-top: 60px;
+    width: 25%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+   #mid-2+div+div>div:nth-child(1){
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 60px;
+    width:35%;
+    margin: auto;
+    margin-top: 150px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+   #mid-2+div+div>div:nth-child(2){
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 26px;
+    width:50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+   #mid-2+div+div>div:nth-child(2)>span{
+    font-weight: 700;
+   }
+   #mid-2+div+div+div{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    
+    justify-content: space-between;
+    margin-top: 70px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #929daf;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+   #mid-2+div+div+div>div>img{
+    width: 19%;
+   }
+   #mid-last{
+    display: flex;
+    width: 88%;
+     
+    margin: auto;
+    margin-top: 200px;
+   gap: 2%;
+   }
+   #mid-last>div{
+    width: 50%;
+    
+    
+   }
+   #mid-last>div:nth-child(1)>img{
+    width: 100%;
+   }
+   #mid-last>div:nth-child(2)>p:nth-child(1){
+      font-weight: 800;
+      font-size: 50px; 
+      line-height: 60px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+   #mid-last>div:nth-child(2)>p:nth-child(1)+p{
+      font-weight: 300;
+      font-size: 20px; 
+      line-height: 28px;
+      width: 95%;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+   #mid-last>div:nth-child(2)>img{
+        width: 25%;
+   }
+   #mid-last>div:nth-child(2)>img:nth-child(4){
+    width: 8%;
+    margin-left: 30px;
+    margin-right: 30px;
+   }
+   #mid-last>div:nth-child(2)>img:nth-child(5){
+    width: 23%;
+   margin-top: 15px;
+   }
+
+   #bottom{
+    width: 100%;
+    
+    border: 1px solid teal;
+    background-color: #0396e7;
+    margin-bottom: -20px;
+
+   }
+   #bottom>div{
+    display: flex;
+    width: 25%;
+    margin: auto;
+    justify-content: space-between;
+   }
+   #bottom>div>img{
+    margin-top: 40px;
+    width: 50%;
+    height: 50px;
+   }
+   #bottom>div>p{
+    font-weight:700 ;
+    font-size: 40px;
+    line-height: 48px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+  
+   #signup1{
+    background-color: white;
+   padding: 5px 50px 5px 50px;
    
+   
+   }
+   #signup1 input{
+    margin-left: -30px;
+    outline: 0px;
+   }
+   #signup1>button{
+    width: 50%;
+    margin-right: -45px;
+   }
+  #signup1+div{
+    font-size:25px ;
+    font-weight:700 ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style:30px ;
+    width:10% ;
+    color: white;
+    margin: auto;
+    margin-top: 80px;
+  }
+  #signup1+div+div{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-top: 24px;
+  }
+  #signup1+div+div>div>img{
+    width: 70%;
+
+  }
+  #signup1+div+div+div{
+    width: 28%;
+    margin: auto;
+    justify-content: center;
+    margin-top: -20px;
+    
+  }
+  #signup1+div+div+div+div{
+
+   font-size: 22px;
+   font-weight:300;
+   line-height:31px ;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   width: 31%;
+   margin: auto;
+   color: white;
+   text-align: center;
+   margin-top: 20px;
+  }
+  #signup1+div+div+div+div>span:nth-child(1){
+    font-size: 22px;
+   font-weight:800;
+   line-height:31px ;
+   color: #ffca00;
+  }
+  #signup1+div+div+div+div>span:nth-child(2){
+    font-size: 22px;
+   font-weight:800;
+   line-height:31px ;
+   color: white;
+  }
+
+  #signup1+div+div+div+div+div{
+    font-size: 16px;
+   font-weight:300;
+   line-height:22px ;
+   color: #ffffff;
+   width: 40%;
+   margin: auto;
+  display: flex;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 5px;
+   margin-bottom: 100px;
+
+  }
+#footer{
+    width: 100%;
+    background-color: #002638;
+   
+  
+
+}
+#footer>div{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    
+    margin: auto;
+    
+
+}
+#footer>div>div>p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    color:#7599a0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#footer>div>div>p:nth-child(1){
+    padding-top: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#footer>div>div:nth-child(1)>p:nth-child(7){
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 15px;
+}
+#footer>div>div:nth-child(4)>p:nth-child(7){
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 20px;
+}
+
+#logos{
+    display: flex;
+   
+  
+    justify-content: space-between;
+   align-items: center;
+   padding-top: 40px;
+   text-align:center;
+   padding-bottom: 40px;
+}
+
+#logos>div>img{
+    width: 50%;
+}
+#logos>div:nth-child(1)>img{
+    width: 100%;
+}
+#logos>div:nth-child(3)>img{
+    width: 30%;
+}
+#lowermost{
+   height: 130px;
+    width: 100%;
+   
+    background-color: #002130;
+    display: flex;
+    justify-content: space-between;
+}
+ #lowermost>div:nth-child(1){
+    display: flex;
+    
+    justify-content: space-around;
+    width: 30%;
+}
+#lowermost>div:nth-child(1)>div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+#lowermost>div:nth-child(1)>div>img{
+    width: 60%;
+}
+#lowermost>div:nth-child(2){
+ display: flex;
+ width: 18%;
+ margin-right: 15px;
+}
+#lowermost>div:nth-child(2)>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#lowermost>div>div{
+    
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
    </style>
 </head>
 <body>
@@ -577,10 +998,280 @@ position: relative;
         
            </div>
            <div>
-        
+            <div>Ayoa Task</div>
+            <div>Easily manage your workload and meet your deadlines</div>
+            <div>
+            <div>
+                <span>&#10003;</span>
+                <p>Workflow view</p>
+            </div>
+            <div>
+                <span>&#10003;</span>
+                <p>Canvas view</p>
+            </div>
+            <div>
+                <span>&#10003;</span>
+                <p>Urgency lists</p>
+            </div>
+            <div>
+                <span>&#10003;</span>
+                <p>Personal planner
+                </p>
+            </div>
+         </div>
            </div>
-           <div></div>
+           <!-- 3rd card -->
+           <div>
+            <div>
+             <img src="https://www.ayoa.com/wp-content/uploads/2022/07/AYOA-GUY.png">
+             <img src="https://www.ayoa.com/wp-content/uploads/2022/07/nowwithai.png">
+             <p>Ayoa Ultimate</p>
+             <p>The full <span>suite</span> of Ayoa Mind Map, Ayoa Task and more…</p>
+            </div>
+            <div>
+                <div>
+                    <span>&#10003;</span>
+                    <p>AI powered mind maps</p>
+                </div>
+                <div>
+                    <span>&#10003;</span>
+                    <p>Gantt timelines</p>
+                </div>
+                <div>
+                    <span>&#10003;</span>
+                    <p>Team collaboration</p>
+                </div>
+                <div>
+                    <span>&#10003;</span>
+                    <p>Interactive whiteboards
+                    </p>
+                </div>
+            </div>
+           </div>
        </div>
+    </div>
+
+    <!-- making button -->
+    <div>
+        <button>See full feature comparison</button>
+    </div>
+    <div>
+        <div>Unrivaled flexibility</div>
+        <div>Whether you’re brainstorming ideas, presenting in meetings, or managing tasks, Ayoa provides you with flexibility and intuitive working methods <span>every step of the way.</span></div>
+    </div>
+
+    <!-- signs div -->
+    <div>
+        <div>
+            <img src="https://www.ayoa.com/wp-content/uploads/2020/10/organic.svg">
+            <p>Mind maps</p>
+        </div>
+        <div>
+            <img src="https://www.ayoa.com/wp-content/uploads/2020/10/whiteboard.svg">
+            <p>Whiteboards</p>
+        </div>
+        <div>
+            <img src="https://www.ayoa.com/wp-content/uploads/2020/10/workflow.svg">
+            <p>Workflow</p>
+        </div>
+        <div>
+            <img src="https://www.ayoa.com/wp-content/uploads/2020/10/canvas.svg">
+            <p>Canvas</p>
+        </div>
+        <div>
+            <img src="https://www.ayoa.com/wp-content/uploads/2020/10/gantt.svg">
+            <p>Gantt </p>
+        </div>
+        <div>
+            <img src="https://www.ayoa.com/wp-content/uploads/2020/10/radial.svg">
+            <p>Radial</p>
+        </div>
+
+        <div>
+            <img src="https://www.ayoa.com/wp-content/uploads/2022/06/catpuremaps.svg">
+            <p>Capture</p>
+        </div>
+    </div>
+
+    <!-- Mid last part -->
+    <div id="mid-last">
+        <div>
+         <img src="https://www.ayoa.com/wp-content/uploads/2021/11/diverse_teams_ayoa-1024x862.webp">
+        </div>
+        <div>
+          <p>Designed for diversity of thought</p>
+          <p>Diverse ideas discover alternative paths, they break moulds, they lead to breakthroughs. Discover how Ayoa’s neuro-inclusive design makes it a tool which helps different types of people work together to achieve their best work.</p>
+          <img src="https://www.ayoa.com/wp-content/uploads/2021/07/ayoa_assistive_tech-300x120.png" alt="">
+          <img src="https://www.ayoa.com/wp-content/uploads/2021/07/bata_logo-234x300.png" alt="">
+          <img src="https://www.ayoa.com/wp-content/uploads/2021/07/bda_assured@2x-300x157.png" alt="">
+        </div>
+    </div>
+
+    <!-- bottom section  -->
+
+    <div id="bottom">
+         <div>
+            <p>Try</p>
+            <img src="https://www.ayoa.com/wp-content/uploads/2019/11/ayoa_logo.png">
+            <p>today</p>
+           
+         </div>
+         
+           
+         <div id="signup1">
+            <input placeholder="Enter your email">
+            <button>Get Started</button>
+          </div>
+           <div>Trusted by</div>
+
+           <div>
+            <div>
+                <img src="https://www.ayoa.com/wp-content/uploads/2021/04/amazon_logo_new.png">
+            </div>
+            <div>
+                <img src="https://www.ayoa.com/wp-content/uploads/2021/04/samsung_logo_new.png" alt="">
+            </div>
+            <div>
+                <img src="https://www.ayoa.com/wp-content/uploads/2021/04/oracle_logo_new.png" alt="">
+            </div>
+            <div>
+                <img src="https://www.ayoa.com/wp-content/uploads/2021/04/continental_logo_new.png" alt="">
+            </div>
+            <div>
+                <img src="https://www.ayoa.com/wp-content/uploads/2021/04/salesforce_logo_new.png" alt="">
+            </div>
+            <div>
+                <img src="https://www.ayoa.com/wp-content/uploads/2021/04/aetna_logo_new.png" alt="">
+            </div>
+            <div>
+                <img src="https://www.ayoa.com/wp-content/uploads/2021/04/bbc_logo_new.png">
+            </div>
+            
+           </div>
+
+           <div>
+            <img src="https://www.ayoa.com/wp-content/uploads/2020/02/Stars.png" alt="">
+           </div>
+
+           <div>
+            Average rating of <span>4.5 stars</span>from<span>1,000+</span>reviews
+              
+           </div>
+           <div>
+           across the Apple App Store, Google Play and Capterra
+           </div>
+    </div>
+    
+
+    <!-- footer -->
+
+    <div id="footer">
+        <div>
+       <div>
+        <p>Ayoa</p>
+        <p>Features</p>
+        <p>About Us</p>
+        <p>Pricing</p>
+        <p>Integrations</p>
+        <p>Security</p>
+        <p> News</p>
+        <p>Blog</p>
+        <p>Press</p>
+        <p>Roadmap</p>
+        <p>Release Notes</p>
+       </div>
+       <div>
+      <p>Use Cases</p>  
+       <p>Task Management</p>
+      <p>Mind Mapping</p> 
+       <p>Project Management</p>    
+      <p>Marketing</p> 
+      <p>Finance</p>
+       <p>Education</p>
+       <p>Neurodiversity</p>
+        <p>All Use Cases</p>
+        <p>Mind Map Gallery</p>
+        <p>Template Library</p>
+        <p>Customer Success Stories</p>
+       </div>
+       <div>
+       <p> Support</p>
+       <p>Help</p>
+        <p>FAQ</p>
+         <p>Contact Us</p>
+        <p>Free Demos & Webinars</p>
+        <p>Where is DropTask?</p>
+        <p>How to Mind Map</p>
+       </div>
+       <div>
+        <p>Services</p>
+        <p>Applied Innovation Training</p>
+         <p>Trainers</p>
+          <p>Keynote Speaker</p>
+           <p>Partnership Programs</p>
+            <p>Decision Radar Profiler</p>
+           <p>Legal</p>
+             <p>Terms and Conditions</p>
+            <p>Privacy Policy</p>
+             <p>License Agreement</p>
+             <p>Use Policy</p>
+       </div>
+       <div>
+       <p> Download</p>
+       <p>Android</p>
+       <p>iPad</p>
+        <p>Windows (Desktop)</p>
+        <p>Mac (Desktop)</p>
+        <p>All Apps</p>
+       </div>
+       </div>
+
+       <div id="logos">
+       
+        <div>
+            <img src="https://www.ayoa.com/wp-content/themes/droptaskreload/navigation/images/combined_logos.png" alt="">
+        </div>
+        <div>
+            <img src="https://www.ayoa.com/wp-content/themes/droptaskreload/navigation/images/gcloudsupplier@2x.png" alt="">
+        </div>
+        <div>
+            <img src="https://www.ayoa.com/wp-content/uploads/2022/06/bata_logo-250.png" alt="">
+        </div>
+        <div>
+            <img src="https://www.ayoa.com/wp-content/themes/droptaskreload/navigation/images/bda_assured@2x.png" alt="">
+        </div>
+        
+       </div>
+    </div>
+
+    <!-- lowermost portion -->
+
+    <div id="lowermost">
+        <div>
+            <div>
+                <img src="https://www.ayoa.com/wp-content/themes/droptaskreload/navigation/images/ayoa.svg">
+            </div>
+            <div>
+                <img src="https://www.ayoa.com/wp-content/themes/droptaskreload/navigation/images/opengenius_logo.svg" alt="">
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://www.ayoa.com/wp-content/themes/droptaskreload/navigation/images/twitter.png" alt="">
+            </div>
+            <div>
+                <img src="https://www.ayoa.com/wp-content/themes/droptaskreload/navigation/images/facebook.png" alt="">
+            </div>
+            <div>
+                <img src="https://www.ayoa.com/wp-content/themes/droptaskreload/navigation/images/youtube.png" alt="">
+            </div>
+            <div>
+                <img src="https://www.ayoa.com/wp-content/themes/droptaskreload/navigation/images/instagram.png" alt="">
+            </div>
+            <div>
+                <img src="https://www.ayoa.com/wp-content/themes/droptaskreload/navigation/images/linkedin.png" alt="">
+            </div>
+        </div>
     </div>
 </body>
  <script src="homepage.js"></script>
