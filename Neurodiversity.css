@@ -1,0 +1,485 @@
+#navbar{
+    width: 100%;
+border: 0px solid red;
+display: flex;
+justify-content: space-between;
+background-color: white;
+position: fixed;
+padding-top: 10px;
+padding-bottom: 10px;
+top:0;
+
+}
+#navbar>div{
+    margin-top: 15px;
+}
+#navbar>div:hover{
+    cursor: pointer;
+}
+
+#navbar>div:nth-child(1)>img{
+  width: 55%;
+  margin-top: -20px;
+  margin-left: 10px;
+  
+}
+#products>.product-hover{
+    display: none;
+    position: absolute;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid #00b0f8;
+    width: 12%;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+ #products:hover{
+    color:#00b0f8 ;
+} 
+#products:hover .product-hover{
+    display: grid;
+    color: #000000;
+   
+}
+#neuro>.neuro-hover{
+    display: none;
+    position: absolute;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid #00b0f8;
+    width: 12%;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+#neuro:hover{
+    color: #00b0f8;
+   
+}
+#neuro:hover .neuro-hover{
+    display: grid;
+    color: #000000;
+   
+}
+#res>.res-hover{
+    display: none;
+    position: absolute;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid #00b0f8;
+    width: 12%;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+#res:hover{
+    color: #00b0f8;
+}
+#res:hover .res-hover{
+    display: grid;
+    color: #000000;
+   
+}
+#lang>.lang-hover{
+    display: none;
+    position: absolute;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid #00b0f8;
+    width: 4%;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 7px;
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+#lang:hover{
+    color: #00b0f8;
+}
+#lang:hover .lang-hover{
+    display: grid;
+    color: #000000;
+   
+}
+.lang-hover>div{
+    display: flex;
+}
+.lang-hover>div>img{
+    width: 50%;
+    padding-right: 10px;
+    padding-left: -5px;
+}
+
+#navbar>div:nth-child(2){
+    border: 0px solid teal;
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    color: #808080;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+}
+#navbar>div:nth-child(2)>div:nth-child(6){
+    display: flex;
+    color: black;
+    font-weight: bold;
+    margin-top: -15px;
+    gap: 5px;
+}
+#navbar>div:nth-child(2)>div:nth-child(7){
+  border: 1px solid #dee1e4;
+    padding: 0px;
+    border-radius: 25px;
+    width: 14%;
+    margin-top: -10px;
+    text-align: center;
+    display: flex;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+#navbar>div:nth-child(2)>div:nth-child(7):hover{
+    border: 1px solid #00b0f8;
+}
+
+/* Neuro Navbar */
+
+#nav2{
+    background-color: #03293c;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #5f7985;
+}
+#nav2>div>div{
+    display: flex;
+    color: #ffffff;
+}
+#nav2>div{
+    display: flex;
+    color: #ffffff;
+    margin-top: 10px;
+}
+#nav2>div:nth-child(1){
+    padding-left: 20px;
+    font-weight: 700;
+    font-size:35px ;
+    line-height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#nav2>div:nth-child(2){
+    
+    font-weight: 300;
+    font-size:16px ;
+    line-height: 22px;
+    display: flex;
+   margin-right: 30px;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+   width:48%;
+   justify-content: space-between;
+}
+#hov{
+    display: none;
+}
+#section:hover>#hov{
+    display: block;
+    position: absolute;
+}
+
+#soft{
+    border: 1px solid white;
+   padding: 10px;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    background-color: #009af9;
+    color: white;
+    border-radius: 30px;
+}
+
+/* top div */
+
+#top{
+    background-color: #03293c;
+    width: 100%;
+ 
+    border-bottom: 1px solid #5f7985;
+    padding-top: 40px;
+    text-align: center;
+    
+    
+}
+#top>img{
+    width: 80%;
+   
+}
+#top>div{
+display: flex;
+
+height: 200px;
+width: 55%;
+margin: auto;
+margin-top: 50px;
+justify-content: space-between;
+}
+#top>div>div:nth-child(1){
+    width: 30%;
+ margin-top: 30px;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    color: white;
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+#top>div>div:nth-child(2){
+    width: 52%;
+   
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+    color: white;
+  
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#top>div>div:nth-child(1)>span{
+    color: #00a9fd;
+    font-weight: 700;
+}
+
+#top>img~div{
+    
+width: 55%;
+margin: auto;
+font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: left;
+    color: white;
+    grid-row: 0px;
+   height: 100px;
+    margin-top: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#mid1>div:nth-child(1){
+    width: 40%;
+margin: auto;
+font-weight: 800;
+    font-size: 50px;
+    line-height: 60px;
+    margin-top: 80px;
+    color:black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#mid1>div:nth-child(1)>span{
+    color: #df006d;
+}
+#diseases{
+   display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    width: 70%;
+    margin: auto;
+   
+    margin-top: 40px;
+    row-gap: 50px;
+}
+#diseases>div{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color:#979797;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+#diseases+div{
+    width: 55%;
+    margin: auto;
+    font-weight: 300;
+    text-align: center;
+        font-size: 22px;
+        line-height: 34px;
+        margin-top: 80px;
+        color:#6c6c6c;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#diseases+div>span{
+    font-weight: 700;
+}
+
+
+/* mid part 2 */
+
+#mid2{
+    width: 100%;
+    height: 600px;
+    background-color: #fef9e7;
+    padding-bottom: 40px;
+}
+#mid2>div:nth-child(1){
+    width: 55%;
+    margin: auto;
+    font-weight: 800;
+    text-align: center;
+        font-size: 50px;
+        line-height: 60px;
+        margin-top: 80px;
+        padding-top: 100px;
+        color:#ffa228;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#mid2>div:nth-child(1)>span{
+    color:#363636;
+}
+#mid2>div:nth-child(2){
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-columns: auto ;
+    width: 53%;
+    margin: auto;
+    font-weight: 300;
+    gap: 30px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 34px;
+   margin-top: 60px;
+    color: #6c6c6c;
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#mid2>div:nth-child(2)>div>span{
+    
+    font-weight: 700;
+}
+
+#footer{
+    width: 100%;
+    background-color: #002638;
+   
+  
+
+}
+#footer>div{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    
+    margin: auto;
+    
+
+}
+#footer>div>div>p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    color:#7599a0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#footer>div>div>p:nth-child(1){
+    padding-top: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#footer>div>div:nth-child(1)>p:nth-child(7){
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 15px;
+}
+#footer>div>div:nth-child(4)>p:nth-child(7){
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 20px;
+}
+
+#logos{
+    display: flex;
+   
+  
+    justify-content: space-between;
+   align-items: center;
+   padding-top: 40px;
+   text-align:center;
+   padding-bottom: 40px;
+}
+
+#logos>div>img{
+    width: 50%;
+}
+#logos>div:nth-child(1)>img{
+    width: 100%;
+}
+#logos>div:nth-child(3)>img{
+    width: 30%;
+}
+#lowermost{
+   height: 130px;
+    width: 100%;
+   
+    background-color: #002130;
+    display: flex;
+    justify-content: space-between;
+}
+ #lowermost>div:nth-child(1){
+    display: flex;
+    
+    justify-content: space-around;
+    width: 30%;
+}
+#lowermost>div:nth-child(1)>div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+#lowermost>div:nth-child(1)>div>img{
+    width: 60%;
+}
+#lowermost>div:nth-child(2){
+ display: flex;
+ width: 18%;
+ margin-right: 15px;
+}
+#lowermost>div:nth-child(2)>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#lowermost>div>div{
+    
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
