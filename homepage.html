@@ -17,7 +17,12 @@ margin-top: 20px;
 align-items: center;
 
     }
-   
+   #signup>button,#signup1>button{
+    cursor: pointer;
+   }
+   #log{
+    cursor: pointer;
+   }
     #navbar>div:hover{
         cursor: pointer;
     }
@@ -59,7 +64,7 @@ align-items: center;
         padding: 20px;
         border-radius: 7px;
     }
-  
+    
     #neuro:hover{
         color: #00b0f8;
        
@@ -203,7 +208,7 @@ align-items: center;
         line-height: 31px;
         background-color: #00b0f8;
         color: white;
-        border: 0px;
+        border: 0px solid red;
         padding: 10px;
         width: 35%;
         border-radius: 10px;
@@ -224,6 +229,9 @@ align-items: center;
         border: 0px;
         margin-left: 20px;
         outline: 0px;
+    }
+    #signup+img{
+        width: 80%;
     }
     #signup1>input{
         border: 0px;
@@ -804,7 +812,21 @@ color: #73c43b;
     width: 20%;
     justify-content: center;
     align-items: center;
-}
+}  
+
+/* Media queries */
+
+@media all and (min-width: 401px) and (max-width: 750px){
+           #navbar{
+            display: none;
+           }
+       
+         }
+
+        @media all and (min-width: 50px) and (max-width: 400px){
+           
+
+        }
    </style>
 </head>
 <body>
@@ -887,7 +909,7 @@ color: #73c43b;
             
          </div>
         </div>
-    <div>Log In</div>
+    <div id="log">Log In </div>
     </div>
   </div>
   
@@ -897,7 +919,7 @@ color: #73c43b;
   <p>Try the world’s most visual productivity app. Supercharge thinking, planning and learning with AI, mind maps, task boards, and more</p>
   <div id="signup">
     <input placeholder="Enter your email">
-    <button><a href="signup.html">Get Started</a></button>
+     <button>Get Started</button> 
   </div>
  
   <img src="https://www.ayoa.com/wp-content/uploads/2022/07/ayoa_allinone_watch.webp">
@@ -1281,4 +1303,20 @@ color: #73c43b;
  </html>
 
 
+<script>
+    let redirect= document.getElementById("log").addEventListener("click",fun);
+    function fun(){
+        window.location.href="login.html"
+    }
 
+     document.querySelector("#signup1>button").addEventListener("click",direct)
+
+     function direct(){
+        window.location.href="signup.html"
+     }
+     document.querySelector("#signup>button").addEventListener("click",direct)
+
+function direct(){
+   window.location.href="signup.html"
+}
+</script>
