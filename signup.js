@@ -12,8 +12,17 @@ function save(){
     email:email,
     password:password,
    }
-  
-
+  count1=0;
+if(email!=""){
+   for(var i=0;i<email.length;i++){
+      if(email[i]=="@"){
+         count1++
+      }
+   }
+   if(count1==0){
+      document.querySelector("#alert2").innerText="Please enter email in the format of *****@***.com";
+   }
+}
    if(name!=""&&email!=""&&password!=""&&check==true){
      var upper="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
      var lower="abcdefghijklmnopqrstuvwxyz";
@@ -42,7 +51,7 @@ function save(){
            alert.innerText="Password must contain at least one uppercase letter,one lowercase letter,one digit and atleast one symbol"
         }
     
-    if(countn>0&&counts>0&&countl>0&&countu>0){
+    if(countn>0&&counts>0&&countl>0&&countu>0&&count1>0){
        if(password.length>7){
 arr.push(obj)
 localStorage.setItem("data",JSON.stringify(arr));

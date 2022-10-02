@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayoa - The mind map used by millions.</title>
+    <link id="favicon" rel = "icon" href = "https://www.ayoa.com/wp-content/uploads/2022/07/AYOA-GUY.png"
+        />
    <style>
-    
+
     #navbar{
         
         width: 100%;
@@ -836,7 +838,7 @@ color: #73c43b;
      <img src="https://www.ayoa.com/wp-content/themes/droptaskreload/navigation/images/ayoa_bluenavlogo.svg">
   </div>
   <div>
-    <div><a href="homepage.html">Home</a></div>
+    <div id="home">Home</div>
     <div id="products">Products
         <div class="product-hover">
             <div>
@@ -850,7 +852,7 @@ color: #73c43b;
             </div>
          </div>
     </div>
-    <div id="neuro"><a href="Neurodiversity.html">Neurodiversity</a>  
+    <div id="neuro">Neurodiversity
         <div class="neuro-hover">
             <div>
              DSA
@@ -1309,14 +1311,25 @@ color: #73c43b;
         window.location.href="login.html"
     }
 
-     document.querySelector("#signup1>button").addEventListener("click",direct)
+     document.querySelector("#signup1>button").addEventListener("click",direct1)
 
-     function direct(){
+     function direct1(){
         window.location.href="signup.html"
      }
-     document.querySelector("#signup>button").addEventListener("click",direct)
+     document.querySelector("#signup>button").addEventListener("click",direct2)
 
-function direct(){
+function direct2(){
    window.location.href="signup.html"
+}
+
+document.querySelector("#home").addEventListener("click",direct3)
+
+function direct3(){
+   window.location.href="index.html"
+}
+document.querySelector("#neuro").addEventListener("click",direct4)
+
+function direct4(){
+   window.location.href="Neurodiversity.html"
 }
 </script>

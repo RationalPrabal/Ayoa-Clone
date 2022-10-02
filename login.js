@@ -23,12 +23,15 @@ var count=0;
             let alert=document.querySelector("h2")
             alert.innerText="Logged in Successful";
             alert.style.color="teal";
+           
             let direct=document.querySelector("h4");
             direct.innerText="return to homepage";
+          
             let redirect=document.querySelector("h4").addEventListener("click",fun);
             function fun(){
-                window.location.href="homepage.html";
+                window.location.href="index.html";
             }
+          
         }
     }
     if(count==0&&obj.email!=""&&obj.password!=""){
