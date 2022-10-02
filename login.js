@@ -1,5 +1,5 @@
 document.getElementById("login").addEventListener("click",save);
-let data=JSON.parse(localStorage.getItem("data"));
+let data=JSON.parse(localStorage.getItem("data"))||[];
 function save(){
     let iemail=document.getElementById("email").value;
     let ipassword=document.getElementById("password").value;
