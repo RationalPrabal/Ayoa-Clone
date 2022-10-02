@@ -34,7 +34,7 @@ var count=0;
           
         }
     }
-    if(count==0&&obj.email!=""&&obj.password!=""){
+    if(count==0||obj.email!=""||obj.password!=""){
         let alert=document.querySelector("h2")
         alert.innerText="Incorrect Email id or Password";
 
