@@ -18,9 +18,16 @@ This is a solo project which was made in the duration of 4 days.
 
 ## Tools used
 
-#### 1. VS Code![Screen-20-07-2021_205948](https://user-images.githubusercontent.com/108731705/215059509-f750fac8-dd25-4f5f-bdcb-14e45a32ef56.png)
+#### 1. VS Code
 
 #### 2. Netlify
 
 
+## Images Of Different pages
+
+
+![Screenshot 2022-10-03 160624](https://user-images.githubusercontent.com/108731705/215060995-a89076b9-1d5b-4afe-a0c2-b4769059ed3b.png)
+![image](https://user-images.githubusercontent.com/108731705/215061117-d9653443-0bbc-4dfd-821e-0e5ae314b585.png)
+![image](https://user-images.githubusercontent.com/108731705/215061226-30cc6bb7-ccb8-4fd2-91a8-6600dd3fbfd6.png)
+![image](https://user-images.githubusercontent.com/108731705/215061311-ef1ce2c5-1587-4ee2-94a1-35ffeea9a9f2.png)
 
