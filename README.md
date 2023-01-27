@@ -18,7 +18,8 @@ This is a solo project which was made in the duration of 4 days.
 
 ## Tools used
 
-#### 1. VS Code
+#### 1. VS Code![Screen-20-07-2021_205948](https://user-images.githubusercontent.com/108731705/215059509-f750fac8-dd25-4f5f-bdcb-14e45a32ef56.png)
+
 #### 2. Netlify
 
 
